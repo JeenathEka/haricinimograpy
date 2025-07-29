@@ -1,0 +1,103 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-section {
+  /* Replace the image below with your desired background */
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.25); /* subtle dark overlay for contrast, adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  max-width: 90vw;
+}
+
+.headline {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.underline {
+  width: 500px;
+  height: 4px;
+  background: #ff4081;
+  margin: 0 auto 20px auto;
+  border-radius: 3px;
+}
+
+.subtext {
+  font-size: 1.13rem;
+  margin-bottom: 28px;
+  color: #fffbe8;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff4081;
+}
+
+.register-btn {
+  background: #ff4081;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 14px 38px;
+  font-size: 1.12em;
+  margin-bottom: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: .5px;
+  transition: background 0.2s;
+}
+
+.register-btn:hover {
+  background: #e73370;
+}
+
+.discover-link {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 0.94rem;
+  margin-top: 13px;
+  cursor: pointer;
+  text-decoration: underline dotted;
+}
+
+@media (max-width: 700px) {
+  .headline {
+    font-size: 1.4rem;
+  }
+  .subtext {
+    font-size: 1rem;
+  }
+  .register-btn {
+    padding: 10px 22px;
+    font-size: 0.96em;
+  }
+}
+
+.gif-modify{
+  width : 100px;
+  height: 100px;
+  border-radius: 50%;
+}

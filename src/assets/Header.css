@@ -1,0 +1,83 @@
+.main-header {
+  background: #00000025;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 100;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo-title {
+  font-family: 'Bodoni Moda', serif, Georgia, 'Times New Roman';
+  font-size: 1.18rem;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.csc {
+  font-size: 0.86rem;
+  color: #bebebe;
+  letter-spacing: 2px;
+  margin-left: 2px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links.right {
+  justify-content: flex-end;
+  min-width: 120px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 0.88rem;
+  color: #d8dde7;
+  letter-spacing: 2px;
+  font-family: 'Inter', Arial, sans-serif;
+  transition: color 0.2s;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+  }
+  .main-header {
+    height: auto;
+  }
+  .logo-title {
+    margin: 10px 0;
+  }
+  .nav-links {
+    gap: 1.2rem;
+  }
+}
